@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transitional Property Advisory | Colorado Housing Transition Strategy</title>
+  <meta name="description" content="Helping Colorado families evaluate downsizing, aging-in-place renovations, multigenerational living, ADUs, and proactive housing transition strategies before decisions become urgent." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Transitional Property Advisory | Colorado Housing Transition Strategy" />
+  <meta property="og:description" content="Helping Colorado families evaluate downsizing, aging-in-place renovations, multigenerational living, ADUs, and proactive housing transition strategies before decisions become urgent." />
+  <meta property="og:image" content="og-image-placeholder.jpg" />
+  <meta property="og:url" content="https://transitionalproperty.com" />
+  <meta property="og:site_name" content="Transitional Property Advisory" />
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Transitional Property Advisory",
+    "description": "Colorado housing transition strategy — helping families evaluate downsizing, aging-in-place renovations, multigenerational living, and ADUs before decisions become urgent.",
+    "url": "https://transitionalproperty.com",
+    "telephone": "720-234-9375",
+    "email": "bgustafson@kentwood.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Brendan Gustafson",
+      "jobTitle": "Colorado Real Estate Broker Associate",
+      "worksFor": { "@type": "Organization", "name": "Kentwood Real Estate" }
+    },
+    "areaServed": { "@type": "State", "name": "Colorado" }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #F7F4EF;
+      --warm-white: #FDFBF8;
+      --stone: #E8E2D9;
+      --taupe: #C4B9A8;
+      --navy: #2C3E50;
+      --navy-mid: #3D5166;
+      --navy-light: #4A6580;
+      --rust: #8B6F5E;
+      --sage: #7A8C7E;
+      --text-dark: #1E2A35;
+      --text-mid: #4A5568;
+      --text-light: #7A8899;
+      --border: #DDD7CD;
+      --section-pad: 96px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--warm-white);
+      color: var(--text-dark);
+      font-weight: 300;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── TYPOGRAPHY ── */
+    .display { font-family: 'Cormorant Garamond', serif; }
+
+    h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; font-weight: 500; line-height: 1.2; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(253,251,248,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 48px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 72px;
+    }
+
+    .nav-brand {
+      display: flex; flex-direction: column;
+    }
+
+    .nav-brand-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px; font-weight: 500;
+      color: var(--navy); letter-spacing: 0.02em;
+    }
+
+    .nav-brand-sub {
+      font-size: 10px; font-weight: 400;
+      color: var(--text-light); letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex; gap: 36px; list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 12px; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--text-mid); text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--navy); }
+
+    .nav-cta {
+      background: var(--navy);
+      color: #fff !important;
+      padding: 10px 22px;
+      border-radius: 2px;
+      transition: background 0.2s !important;
+    }
+
+    .nav-cta:hover { background: var(--navy-mid) !important; color: #fff; }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 88vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow: hidden;
+    }
+
+    .hero-left {
+      background: var(--navy);
+      padding: 80px 64px 80px 80px;
+      display: flex; flex-direction: column; justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-left::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 20% 80%, rgba(122,140,126,0.15) 0%, transparent 60%),
+                  radial-gradient(ellipse at 80% 20%, rgba(139,111,94,0.1) 0%, transparent 50%);
+    }
+
+    .hero-eyebrow {
+      font-size: 11px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--taupe); margin-bottom: 28px;
+      position: relative;
+      display: flex; align-items: center; gap: 12px;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      width: 32px; height: 1px;
+      background: var(--taupe);
+      display: inline-block;
+    }
+
+    .hero-h1 {
+      font-size: clamp(42px, 4.5vw, 62px);
+      color: #fff; font-weight: 400;
+      line-height: 1.1; margin-bottom: 28px;
+      position: relative;
+    }
+
+    .hero-h1 em {
+      font-style: italic; color: var(--taupe);
+    }
+
+    .hero-sub {
+      font-size: 16px; line-height: 1.7;
+      color: rgba(255,255,255,0.65);
+      max-width: 420px; margin-bottom: 48px;
+      position: relative;
+    }
+
+    .hero-btns {
+      display: flex; gap: 16px; flex-wrap: wrap;
+      position: relative;
+    }
+
+    .btn-primary {
+      background: #fff; color: var(--navy);
+      padding: 14px 28px; border-radius: 2px;
+      font-size: 12px; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      text-decoration: none; cursor: pointer;
+      transition: all 0.2s;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary:hover {
+      background: var(--cream); color: var(--navy);
+    }
+
+    .btn-outline {
+      background: transparent; color: rgba(255,255,255,0.8);
+      padding: 14px 28px; border-radius: 2px;
+      font-size: 12px; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.25);
+      transition: all 0.2s;
+    }
+
+    .btn-outline:hover {
+      border-color: rgba(255,255,255,0.6);
+      color: #fff;
+    }
+
+    .hero-credibility {
+      position: relative;
+      margin-top: 48px; padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      font-size: 12px; color: rgba(255,255,255,0.45);
+      letter-spacing: 0.05em;
+    }
+
+    .hero-right {
+      background: var(--cream);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-right-inner {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(135deg, var(--stone) 0%, var(--cream) 50%, #EDE8E0 100%);
+    }
+
+    .hero-right-pattern {
+      position: absolute; inset: 0;
+      background-image:
+        repeating-linear-gradient(
+          0deg, transparent, transparent 40px,
+          rgba(196,185,168,0.12) 40px, rgba(196,185,168,0.12) 41px
+        ),
+        repeating-linear-gradient(
+          90deg, transparent, transparent 40px,
+          rgba(196,185,168,0.12) 40px, rgba(196,185,168,0.12) 41px
+        );
+    }
+
+    .hero-right-content {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: flex-start;
+      padding: 64px 48px 64px 56px;
+    }
+
+    .hero-stat-block {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 340px;
+      animation: slideUp 0.6s ease both;
+    }
+
+    .hero-stat-block:nth-child(2) { animation-delay: 0.1s; margin-left: 32px; }
+    .hero-stat-block:nth-child(3) { animation-delay: 0.2s; }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .stat-label {
+      font-size: 10px; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--text-light); margin-bottom: 8px;
+    }
+
+    .stat-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px; font-weight: 500;
+      color: var(--navy); line-height: 1.2;
+    }
+
+    .stat-desc {
+      font-size: 13px; color: var(--text-mid);
+      margin-top: 4px; line-height: 1.5;
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: var(--section-pad) 0; }
+
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    .section-label {
+      font-size: 10px; font-weight: 500;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--rust); margin-bottom: 16px;
+      display: flex; align-items: center; gap: 10px;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1; max-width: 40px; height: 1px;
+      background: var(--rust);
+    }
+
+    .section-h2 {
+      font-size: clamp(32px, 3.5vw, 46px);
+      color: var(--text-dark); margin-bottom: 20px;
+    }
+
+    .section-body {
+      font-size: 16px; color: var(--text-mid);
+      max-width: 600px; line-height: 1.8;
+    }
+
+    /* ── PROBLEM SECTION ── */
+    .problem-section {
+      background: var(--warm-white);
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+      margin-top: 64px;
+    }
+
+    .problem-left { }
+
+    .problem-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .problem-point {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 20px 22px;
+      transition: border-color 0.2s;
+    }
+
+    .problem-point:hover { border-color: var(--taupe); }
+
+    .problem-point-icon {
+      font-size: 20px; margin-bottom: 10px;
+    }
+
+    .problem-point-text {
+      font-size: 14px; color: var(--text-mid);
+      line-height: 1.5;
+    }
+
+    .problem-right {
+      background: var(--navy);
+      border-radius: 4px;
+      padding: 48px 44px;
+      color: #fff;
+    }
+
+    .problem-right h3 {
+      font-size: 26px; color: #fff;
+      margin-bottom: 24px; font-weight: 400;
+    }
+
+    .problem-right p {
+      font-size: 15px; color: rgba(255,255,255,0.7);
+      line-height: 1.8; margin-bottom: 20px;
+    }
+
+    .problem-right p:last-child { margin-bottom: 0; }
+
+    .accent-line {
+      width: 40px; height: 2px;
+      background: var(--taupe);
+      margin-bottom: 28px;
+    }
+
+    /* ── TRANSITION PATHS ── */
+    .paths-section {
+      background: var(--cream);
+    }
+
+    .paths-header {
+      display: flex; justify-content: space-between;
+      align-items: flex-end; margin-bottom: 56px;
+    }
+
+    .paths-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .path-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 36px 32px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.25s;
+      cursor: default;
+    }
+
+    .path-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--navy), var(--navy-light));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .path-card:hover {
+      border-color: var(--taupe);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(44,62,80,0.08);
+    }
+
+    .path-card:hover::before { transform: scaleX(1); }
+
+    .path-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px; font-weight: 300;
+      color: var(--stone);
+      position: absolute; top: 20px; right: 24px;
+      line-height: 1;
+      user-select: none;
+    }
+
+    .path-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px; font-weight: 500;
+      color: var(--navy); margin-bottom: 12px;
+    }
+
+    .path-desc {
+      font-size: 14px; color: var(--text-mid);
+      line-height: 1.65;
+    }
+
+    .path-tags {
+      display: flex; flex-wrap: wrap; gap: 6px;
+      margin-top: 20px;
+    }
+
+    .path-tag {
+      font-size: 10px; font-weight: 500;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--navy-light);
+      background: var(--stone);
+      padding: 4px 10px; border-radius: 2px;
+    }
+
+    /* ── WHAT WE EVALUATE ── */
+    .evaluate-section { background: var(--warm-white); }
+
+    .evaluate-layout {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 80px;
+      align-items: start;
+      margin-top: 64px;
+    }
+
+    .evaluate-intro { }
+
+    .evaluate-intro p {
+      font-size: 15px; color: var(--text-mid);
+      line-height: 1.8; margin-top: 20px;
+    }
+
+    .evaluate-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .evaluate-item {
+      background: var(--warm-white);
+      padding: 24px 26px;
+      display: flex; align-items: flex-start;
+      gap: 14px;
+      transition: background 0.2s;
+    }
+
+    .evaluate-item:hover { background: var(--cream); }
+
+    .evaluate-dot {
+      width: 6px; height: 6px;
+      background: var(--navy);
+      border-radius: 50%;
+      margin-top: 8px; flex-shrink: 0;
+    }
+
+    .evaluate-text h4 {
+      font-family: 'Jost', sans-serif;
+      font-size: 14px; font-weight: 500;
+      color: var(--text-dark); margin-bottom: 4px;
+    }
+
+    .evaluate-text p {
+      font-size: 13px; color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    /* ── SCENARIOS ── */
+    .scenarios-section { background: var(--cream); }
+
+    .scenarios-list {
+      margin-top: 56px;
+      display: flex; flex-direction: column; gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .scenario-item {
+      background: var(--warm-white);
+      padding: 32px 40px;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 56px 1fr auto;
+      gap: 24px; align-items: center;
+      transition: background 0.2s;
+    }
+
+    .scenario-item:last-child { border-bottom: none; }
+    .scenario-item:hover { background: #FEFCFA; }
+
+    .scenario-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 36px; font-weight: 300;
+      color: var(--stone); line-height: 1;
+    }
+
+    .scenario-content h4 {
+      font-family: 'Jost', sans-serif;
+      font-size: 15px; font-weight: 500;
+      color: var(--text-dark); margin-bottom: 6px;
+    }
+
+    .scenario-content p {
+      font-size: 14px; color: var(--text-mid);
+      line-height: 1.6;
+    }
+
+    .scenario-arrow {
+      color: var(--taupe);
+      font-size: 20px;
+    }
+
+    /* ── DIFFERENT ── */
+    .different-section {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .different-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .different-left .section-label { color: var(--taupe); }
+    .different-left .section-label::after { background: var(--taupe); }
+
+    .different-left h2 {
+      color: #fff; margin-bottom: 24px;
+    }
+
+    .different-left p {
+      font-size: 15px; color: rgba(255,255,255,0.65);
+      line-height: 1.8; margin-bottom: 16px;
+    }
+
+    .not-list {
+      margin-top: 32px;
+    }
+
+    .not-item {
+      display: flex; align-items: center; gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .not-x {
+      width: 24px; height: 24px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; color: var(--taupe);
+      flex-shrink: 0;
+    }
+
+    .not-text {
+      font-size: 14px; color: rgba(255,255,255,0.55);
+    }
+
+    .different-right {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 4px;
+      padding: 44px 40px;
+      margin-top: 20px;
+    }
+
+    .different-right h3 {
+      color: #fff; font-size: 24px;
+      margin-bottom: 20px; font-weight: 400;
+    }
+
+    .what-is-list {
+      list-style: none;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+
+    .what-is-item {
+      display: flex; gap: 14px;
+      align-items: flex-start;
+    }
+
+    .check {
+      color: var(--sage);
+      font-size: 16px; margin-top: 1px;
+      flex-shrink: 0;
+    }
+
+    .what-is-text {
+      font-size: 14px; color: rgba(255,255,255,0.7);
+      line-height: 1.6;
+    }
+
+    /* ── BRAND ECOSYSTEM ── */
+    .ecosystem-section { background: var(--stone); }
+
+    .ecosystem-table {
+      margin-top: 56px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .eco-header {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      background: var(--navy);
+      padding: 16px 32px;
+    }
+
+    .eco-header span {
+      font-size: 10px; font-weight: 500;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .eco-row {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      padding: 24px 32px;
+      background: var(--warm-white);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.2s;
+      align-items: center;
+    }
+
+    .eco-row:last-child { border-bottom: none; }
+    .eco-row:hover { background: var(--cream); }
+    .eco-row.active { background: var(--cream); border-left: 3px solid var(--navy); }
+
+    .eco-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px; color: var(--navy);
+    }
+
+    .eco-active-label {
+      font-size: 10px; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--rust);
+      margin-top: 4px;
+    }
+
+    .eco-problem {
+      font-size: 15px; color: var(--text-mid);
+      font-style: italic;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+    }
+
+    /* ── ABOUT ── */
+    .about-section { background: var(--warm-white); }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 80px; align-items: start;
+    }
+
+    .about-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 44px 40px;
+      text-align: center;
+    }
+
+    .about-avatar {
+      width: 80px; height: 80px;
+      background: var(--navy);
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px; color: #fff; font-weight: 400;
+    }
+
+    .about-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px; color: var(--navy); margin-bottom: 4px;
+    }
+
+    .about-title {
+      font-size: 12px; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--text-light);
+      margin-bottom: 24px;
+    }
+
+    .about-divider {
+      width: 32px; height: 1px;
+      background: var(--border);
+      margin: 0 auto 24px;
+    }
+
+    .about-brokerage {
+      font-size: 12px; color: var(--text-light);
+      letter-spacing: 0.06em;
+    }
+
+    .about-right h2 { margin-bottom: 24px; }
+
+    .about-right p {
+      font-size: 15px; color: var(--text-mid);
+      line-height: 1.85; margin-bottom: 20px;
+    }
+
+    .about-right p:last-of-type { margin-bottom: 0; }
+
+    /* ── RESOURCES ── */
+    .resources-section { background: var(--cream); }
+
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 56px;
+    }
+
+    .resource-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 28px 26px;
+      text-decoration: none;
+      display: block;
+      transition: all 0.2s;
+    }
+
+    .resource-card:hover {
+      border-color: var(--navy-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(44,62,80,0.07);
+    }
+
+    .resource-tag {
+      font-size: 10px; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--rust); margin-bottom: 12px;
+    }
+
+    .resource-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 19px; color: var(--navy);
+      line-height: 1.3; margin-bottom: 10px;
+    }
+
+    .resource-arrow {
+      font-size: 12px; color: var(--text-light);
+      margin-top: 16px;
+      display: flex; align-items: center; gap: 6px;
+    }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: var(--navy);
+      text-align: center;
+      padding: 120px 0;
+    }
+
+    .cta-section .section-label {
+      color: var(--taupe);
+      justify-content: center;
+    }
+
+    .cta-section .section-label::after {
+      display: none;
+    }
+
+    .cta-section .section-label::before {
+      content: '';
+      flex: 0; max-width: 40px; height: 1px;
+      background: var(--taupe);
+    }
+
+    .cta-h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 4vw, 54px);
+      color: #fff; font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .cta-body {
+      font-size: 16px; color: rgba(255,255,255,0.6);
+      max-width: 540px; margin: 0 auto 48px;
+      line-height: 1.8;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #fff; color: var(--navy);
+      padding: 16px 40px; border-radius: 2px;
+      font-size: 12px; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .cta-btn:hover { background: var(--cream); }
+
+
+    .cta-contact {
+      margin-top: 28px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.04em;
+    }
+
+    .cta-contact a {
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .cta-contact a:hover { color: rgba(255,255,255,0.85); }
+
+    .cta-contact-sep {
+      margin: 0 10px;
+      color: rgba(255,255,255,0.2);
+    }
+
+    /* ── DISCLAIMER ── */
+    .disclaimer-section {
+      background: var(--stone);
+      padding: 40px 0;
+    }
+
+    .disclaimer-text {
+      font-size: 12px; color: var(--text-light);
+      line-height: 1.8; text-align: center;
+      max-width: 760px; margin: 0 auto;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--text-dark);
+      padding: 48px 0 32px;
+    }
+
+    .footer-inner {
+      display: flex; justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 32px;
+      margin-bottom: 24px;
+    }
+
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px; color: #fff;
+    }
+
+    .footer-brand-sub {
+      font-size: 11px; color: rgba(255,255,255,0.35);
+      letter-spacing: 0.1em; margin-top: 4px;
+    }
+
+    .footer-brokerage {
+      font-size: 12px; color: rgba(255,255,255,0.4);
+      text-align: right; line-height: 1.6;
+    }
+
+    .footer-copy {
+      font-size: 11px; color: rgba(255,255,255,0.25);
+      text-align: center;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-in {
+      opacity: 0;
+      animation: fadeIn 0.7s ease forwards;
+    }
+
+    .delay-1 { animation-delay: 0.15s; }
+    .delay-2 { animation-delay: 0.3s; }
+    .delay-3 { animation-delay: 0.45s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      :root { --section-pad: 64px; }
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-right { display: none; }
+      .hero-left { padding: 64px 32px; }
+      .container { padding: 0 24px; }
+      .problem-grid, .evaluate-layout, .about-layout,
+      .different-layout, .paths-grid { grid-template-columns: 1fr; gap: 40px; }
+      .paths-grid { grid-template-columns: 1fr 1fr; }
+      .resources-grid { grid-template-columns: 1fr; }
+      .evaluate-grid { grid-template-columns: 1fr; }
+      .paths-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+    }
+
+    @media (max-width: 600px) {
+      .paths-grid { grid-template-columns: 1fr; }
+      .problem-points { grid-template-columns: 1fr; }
+      .scenario-item { grid-template-columns: 40px 1fr; }
+      .scenario-arrow { display: none; }
+      .eco-row, .eco-header { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <div class="nav-brand-name">Transitional Property Advisory</div>
+    <div class="nav-brand-sub">Real estate services through Kentwood Real Estate</div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#paths">Transition Paths</a></li>
+    <li><a href="#scenarios">Scenarios</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#consult" class="nav-cta">Start a Conversation</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow animate-in">Transitional Property Advisory</div>
+    <h1 class="hero-h1 animate-in delay-1">
+      Housing Transition<br>Strategy for<br><em>Colorado Families</em>
+    </h1>
+    <p class="hero-sub animate-in delay-2">
+      Helping families evaluate downsizing, aging-in-place renovations, multigenerational living, ADUs, and proactive housing transitions before decisions become urgent.
+    </p>
+    <div class="hero-btns animate-in delay-3">
+      <a href="#consult" class="btn-primary">Start a Housing Transition Conversation</a>
+      <a href="#paths" class="btn-outline">Explore Transition Options</a>
+    </div>
+    <div class="hero-credibility animate-in delay-3">
+      Real estate, renovation, and property transition guidance from Brendan Gustafson, Kentwood Real Estate.
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-right-inner"></div>
+    <div class="hero-right-pattern"></div>
+    <div class="hero-right-content">
+      <div class="hero-stat-block">
+        <div class="stat-label">The Challenge</div>
+        <div class="stat-value">Most families<br>wait too long</div>
+        <div class="stat-desc">Decisions made in crisis create fewer options and greater stress for everyone involved.</div>
+      </div>
+      <div class="hero-stat-block">
+        <div class="stat-label">Our Approach</div>
+        <div class="stat-value">Proactive<br>planning</div>
+        <div class="stat-desc">Evaluating housing options before physical, financial, or logistical pressure forces a decision.</div>
+      </div>
+      <div class="hero-stat-block">
+        <div class="stat-label">The Result</div>
+        <div class="stat-value">More options,<br>less urgency</div>
+        <div class="stat-desc">Families who plan ahead navigate transitions with clarity instead of crisis management.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem-section" id="problem">
+  <div class="container">
+    <div class="problem-grid">
+      <div class="problem-left">
+        <div class="section-label">The Challenge</div>
+        <h2 class="section-h2">Most Families Know a Change Is Coming — But Don't Know the Best Path</h2>
+        <p class="section-body">
+          Many families find themselves in a familiar situation: aging parents or grandparents in a home that no longer fits their physical needs, maintenance capacity, or evolving family support needs — but no clear sense of what the best path forward actually looks like. Whether the home is in Golden, Applewood, Lakewood, Arvada, or Wheat Ridge, the questions are often the same.
+        </p>
+        <div class="problem-points">
+          <div class="problem-point">
+            <div class="problem-point-icon">🏠</div>
+            <div class="problem-point-text">Stairs become harder to navigate safely over time</div>
+          </div>
+          <div class="problem-point">
+            <div class="problem-point-icon">🔧</div>
+            <div class="problem-point-text">Home maintenance becomes physically and financially overwhelming</div>
+          </div>
+          <div class="problem-point">
+            <div class="problem-point-icon">🤝</div>
+            <div class="problem-point-text">Isolation can increase as mobility and social access shift</div>
+          </div>
+          <div class="problem-point">
+            <div class="problem-point-icon">📋</div>
+            <div class="problem-point-text">Care needs evolve — often faster than expected</div>
+          </div>
+          <div class="problem-point">
+            <div class="problem-point-icon">⏰</div>
+            <div class="problem-point-text">Families often wait until a health event forces the decision</div>
+          </div>
+          <div class="problem-point">
+            <div class="problem-point-icon">💡</div>
+            <div class="problem-point-text">Early planning creates more options and better outcomes</div>
+          </div>
+        </div>
+      </div>
+      <div class="problem-right">
+        <div class="accent-line"></div>
+        <h3>The cost of waiting is measured in options lost.</h3>
+        <p>When housing decisions are made under pressure — after a fall, a health diagnosis, or a family crisis — the available choices narrow dramatically. Timing disappears. Decisions that once had years to unfold suddenly have weeks.</p>
+        <p>Proactive housing strategy isn't about rushing a decision. It's about understanding the options while there's still time to make good ones — evaluating the home, the finances, the alternatives, and the family dynamics before urgency takes the wheel.</p>
+        <p>That's what Transitional Property Advisory is designed to help with.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSITION PATHS -->
+<section class="paths-section" id="paths">
+  <div class="container">
+    <div class="paths-header">
+      <div>
+        <div class="section-label">Common Transition Paths</div>
+        <h2 class="section-h2">Every Family's Situation Is Different</h2>
+      </div>
+      <p style="font-size:15px;color:var(--text-mid);max-width:320px;text-align:right;">
+        There's rarely one right answer — but there are usually two or three options worth evaluating carefully.
+      </p>
+    </div>
+    <div class="paths-grid">
+
+      <div class="path-card">
+        <div class="path-number">01</div>
+        <div class="path-title">Aging in Place</div>
+        <p class="path-desc">Modifying a current home to support changing physical needs — without requiring a move. Focuses on practicality, safety, and long-term livability.</p>
+        <div class="path-tags">
+          <span class="path-tag">Main-floor living</span>
+          <span class="path-tag">Accessibility</span>
+          <span class="path-tag">Safety improvements</span>
+        </div>
+      </div>
+
+      <div class="path-card">
+        <div class="path-number">02</div>
+        <div class="path-title">Downsizing</div>
+        <p class="path-desc">Transitioning to a smaller, lower-maintenance property — often a ranch home — that better matches current life stage and reduces ongoing burden.</p>
+        <div class="path-tags">
+          <span class="path-tag">Ranch homes</span>
+          <span class="path-tag">Lock-and-leave</span>
+          <span class="path-tag">Proximity to family</span>
+        </div>
+      </div>
+
+      <div class="path-card">
+        <div class="path-number">03</div>
+        <div class="path-title">Multigenerational Living</div>
+        <p class="path-desc">Families combining households into one property — designed or adapted for privacy, care proximity, and long-term functional coexistence.</p>
+        <div class="path-tags">
+          <span class="path-tag">Privacy</span>
+          <span class="path-tag">Care proximity</span>
+          <span class="path-tag">Layout planning</span>
+        </div>
+      </div>
+
+      <div class="path-card">
+        <div class="path-number">04</div>
+        <div class="path-title">ADU Strategy</div>
+        <p class="path-desc">Evaluating whether an Accessory Dwelling Unit — attached or detached — could enable aging parents to live independently on the same property.</p>
+        <div class="path-tags">
+          <span class="path-tag">Zoning</span>
+          <span class="path-tag">Construction costs</span>
+          <span class="path-tag">Lot fit</span>
+        </div>
+      </div>
+
+      <div class="path-card">
+        <div class="path-number">05</div>
+        <div class="path-title">Selling & Relocating</div>
+        <p class="path-desc">Preparing and timing a sale to maximize equity and coordinate the logistics of transitioning out of a long-held property into a better-fit home.</p>
+        <div class="path-tags">
+          <span class="path-tag">Equity strategy</span>
+          <span class="path-tag">Preparation</span>
+          <span class="path-tag">Transition timing</span>
+        </div>
+      </div>
+
+      <div class="path-card">
+        <div class="path-number">06</div>
+        <div class="path-title">Keeping Property in the Family</div>
+        <p class="path-desc">Evaluating whether it makes sense — financially and practically — for adult children to acquire the family home while helping parents transition.</p>
+        <div class="path-tags">
+          <span class="path-tag">Buyout structures</span>
+          <span class="path-tag">Estate considerations</span>
+          <span class="path-tag">Renovation needs</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE EVALUATE -->
+<section class="evaluate-section" id="evaluate">
+  <div class="container">
+    <div class="evaluate-layout">
+      <div class="evaluate-intro">
+        <div class="section-label">Our Process</div>
+        <h2 class="section-h2">What We Help You Evaluate</h2>
+        <p>Housing transitions involve more moving parts than most families anticipate. Transitional Property Advisory helps bring those pieces into focus — so you can make decisions with clarity rather than guesswork.</p>
+      </div>
+      <div class="evaluate-grid">
+        <div class="evaluate-item">
+          <div class="evaluate-dot"></div>
+          <div class="evaluate-text">
+            <h4>Housing Practicality</h4>
+            <p>Does the current home realistically support the next 5–10 years?</p>
+          </div>
+        </div>
+        <div class="evaluate-item">
+          <div class="evaluate-dot"></div>
+          <div class="evaluate-text">
+            <h4>Renovation Feasibility</h4>
+            <p>What modifications are possible, and at what cost and disruption?</p>
+          </div>
+        </div>
+        <div class="evaluate-item">
+          <div class="evaluate-dot"></div>
+          <div class="evaluate-text">
+            <h4>ADU Potential</h4>
+            <p>Does the lot, zoning, and layout support an accessory dwelling unit?</p>
+          </div>
+        </div>
+        <div class="evaluate-item">
+          <div class="evaluate-dot"></div>
+          <div class="evaluate-text">
+            <h4>Resale Implications</h4>
+            <p>How do renovation or transition decisions affect long-term value?</p>
+          </div>
+        </div>
+        <div class="evaluate-item">
+          <div class="evaluate-dot"></div>
+          <div class="evaluate-text">
+            <h4>Neighborhood Fit</h4>
+            <p>Does the current location still serve access, proximity, and lifestyle needs?</p>
+          </div>
+        </div>
+        <div class="evaluate-item">
+          <div class="evaluate-dot"></div>
+          <div class="evaluate-text">
+            <h4>Long-Term Flexibility</h4>
+            <p>Which path preserves the most options as circumstances evolve?</p>
+          </div>
+        </div>
+        <div class="evaluate-item">
+          <div class="evaluate-dot"></div>
+          <div class="evaluate-text">
+            <h4>Cost Comparisons</h4>
+            <p>Side-by-side evaluation of renovation vs. relocation vs. restructuring.</p>
+          </div>
+        </div>
+        <div class="evaluate-item">
+          <div class="evaluate-dot"></div>
+          <div class="evaluate-text">
+            <h4>Property Strategy</h4>
+            <p>How does this property fit into a broader family real estate picture?</p>
+          </div>
+        </div>
+        <div class="evaluate-item">
+          <div class="evaluate-dot"></div>
+          <div class="evaluate-text">
+            <h4>Contractor Coordination</h4>
+            <p>Connecting renovation needs with qualified local professionals.</p>
+          </div>
+        </div>
+        <div class="evaluate-item">
+          <div class="evaluate-dot"></div>
+          <div class="evaluate-text">
+            <h4>Transition Timing</h4>
+            <p>When to move, sell, renovate, or wait — and in what sequence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENARIOS -->
+<section class="scenarios-section" id="scenarios">
+  <div class="container">
+    <div class="section-label">Real Situations</div>
+    <h2 class="section-h2">Family Scenarios We Work Through</h2>
+    <p class="section-body">Every family's situation is specific — but the underlying questions are often familiar. Here are some of the situations we help Colorado families navigate.</p>
+    <div class="scenarios-list">
+
+      <div class="scenario-item">
+        <div class="scenario-num">01</div>
+        <div class="scenario-content">
+          <h4>Two-Story Home Evaluation — Golden, Applewood, or Wheat Ridge</h4>
+          <p>Parents in a two-story home in Golden, Applewood, or Wheat Ridge considering whether a nearby ranch is the right move — evaluating timing, equity, and what the transition actually involves.</p>
+        </div>
+        <div class="scenario-arrow">→</div>
+      </div>
+
+      <div class="scenario-item">
+        <div class="scenario-num">02</div>
+        <div class="scenario-content">
+          <h4>Two Homes into One Multigenerational Property</h4>
+          <p>A family exploring whether selling two separate homes to buy one well-designed multigenerational property makes financial and practical sense.</p>
+        </div>
+        <div class="scenario-arrow">→</div>
+      </div>
+
+      <div class="scenario-item">
+        <div class="scenario-num">03</div>
+        <div class="scenario-content">
+          <h4>Adult Children Acquiring the Family Home</h4>
+          <p>Adult children evaluating whether buying their parents' home — at market or structured terms — can help the family while enabling parents to downsize.</p>
+        </div>
+        <div class="scenario-arrow">→</div>
+      </div>
+
+      <div class="scenario-item">
+        <div class="scenario-num">04</div>
+        <div class="scenario-content">
+          <h4>ADU Feasibility for Aging Parents — Lakewood, Arvada &amp; Morrison</h4>
+          <p>A homeowner in Lakewood, Arvada, or Morrison considering whether their lot, zoning, and finances support adding an ADU to allow aging parents to live nearby with independence.</p>
+        </div>
+        <div class="scenario-arrow">→</div>
+      </div>
+
+      <div class="scenario-item">
+        <div class="scenario-num">05</div>
+        <div class="scenario-content">
+          <h4>Aging-in-Place Renovation vs. Relocation</h4>
+          <p>A family comparing what it would cost and take to modify a current home versus finding a better-fit property — with a clear side-by-side analysis.</p>
+        </div>
+        <div class="scenario-arrow">→</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY DIFFERENT -->
+<section class="different-section" id="different">
+  <div class="container">
+    <div class="different-layout">
+      <div class="different-left">
+        <div class="section-label">Our Position</div>
+        <h2 class="section-h2">What This Is — and What It Isn't</h2>
+        <p>Transitional Property Advisory occupies a specific and useful space in the family transition ecosystem. Understanding where we fit — and where we don't — helps families get the right guidance from the right sources.</p>
+
+        <div class="not-list">
+          <p style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:8px;font-weight:500;">We are not:</p>
+          <div class="not-item">
+            <div class="not-x">✕</div>
+            <span class="not-text">A senior living placement or elder care service</span>
+          </div>
+          <div class="not-item">
+            <div class="not-x">✕</div>
+            <span class="not-text">A medical provider or care manager</span>
+          </div>
+          <div class="not-item">
+            <div class="not-x">✕</div>
+            <span class="not-text">A financial advisor or investment planner</span>
+          </div>
+          <div class="not-item">
+            <div class="not-x">✕</div>
+            <span class="not-text">An estate attorney or legal service</span>
+          </div>
+          <div class="not-item">
+            <div class="not-x">✕</div>
+            <span class="not-text">A contractor, builder, or renovation firm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="different-right">
+        <div class="accent-line" style="background:rgba(255,255,255,0.2);"></div>
+        <h3>We are a property and housing transition strategist.</h3>
+        <ul class="what-is-list">
+          <li class="what-is-item">
+            <span class="check">✓</span>
+            <span class="what-is-text">Helping families think clearly about real estate options before decisions become urgent</span>
+          </li>
+          <li class="what-is-item">
+            <span class="check">✓</span>
+            <span class="what-is-text">Evaluating renovation feasibility, ADU potential, and property modification options</span>
+          </li>
+          <li class="what-is-item">
+            <span class="check">✓</span>
+            <span class="what-is-text">Comparing the practical and financial implications of staying vs. moving</span>
+          </li>
+          <li class="what-is-item">
+            <span class="check">✓</span>
+            <span class="what-is-text">Advising on resale strategy, timing, and property preparation</span>
+          </li>
+          <li class="what-is-item">
+            <span class="check">✓</span>
+            <span class="what-is-text">Facilitating multigenerational property strategies and family buyout structures</span>
+          </li>
+          <li class="what-is-item">
+            <span class="check">✓</span>
+            <span class="what-is-text">Coordinating with contractors, lenders, and other professionals as needed</span>
+          </li>
+          <li class="what-is-item">
+            <span class="check">✓</span>
+            <span class="what-is-text">Providing a calm, practical framework for complex family property decisions</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND ECOSYSTEM -->
+<section class="ecosystem-section">
+  <div class="container">
+    <div class="section-label">Advisory Network</div>
+    <h2 class="section-h2">Part of a Connected Advisory Framework</h2>
+    <p class="section-body">Transitional Property Advisory is one of three related advisory platforms serving Colorado families across the full spectrum of property decisions.</p>
+    <div class="ecosystem-table">
+      <div class="eco-header">
+        <span>Advisory Brand</span>
+        <span>Core Problem Addressed</span>
+      </div>
+      <div class="eco-row">
+        <div>
+          <div class="eco-brand">Inherited Property Advisory</div>
+        </div>
+        <div class="eco-problem">"What do we do with a property after someone passes away?"</div>
+      </div>
+      <div class="eco-row active">
+        <div>
+          <div class="eco-brand">Transitional Property Advisory</div>
+          <div class="eco-active-label">↑ You are here</div>
+        </div>
+        <div class="eco-problem">"How do we proactively transition housing before a crisis?"</div>
+      </div>
+      <div class="eco-row">
+        <div>
+          <div class="eco-brand">Outset Advisory</div>
+        </div>
+        <div class="eco-problem">"How do we renovate or build the right way from the start?"</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-layout">
+      <div>
+        <div class="about-card">
+          <div class="about-avatar">BG</div>
+          <div class="about-name">Brendan Gustafson</div>
+          <div class="about-title">Colorado Realtor &amp; Property Advisor</div>
+          <div class="about-divider"></div>
+          <div class="about-brokerage">Real estate services provided through<br><strong style="color:var(--text-mid)">Kentwood Real Estate</strong></div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="section-label">About</div>
+        <h2 class="section-h2">Colorado Property Expertise, Applied to Family Transitions</h2>
+        <p>Brendan Gustafson is a Colorado Realtor, investor, renovator, and property advisor with experience across real estate sales, investment properties, renovation strategy, and family property transitions.</p>
+        <p>Through Transitional Property Advisory, Brendan helps families evaluate practical housing paths before decisions become urgent — whether that means downsizing, modifying a home, exploring ADU potential, creating multigenerational living, or preparing a property for sale.</p>
+        <p>The goal is always the same: help families understand their real options clearly, without pressure and without guesswork, while there's still time to make thoughtful decisions.</p>
+        <p style="font-size:13px;color:var(--text-light);border-top:1px solid var(--border);padding-top:20px;margin-top:8px;">Real estate services are provided through Brendan's brokerage, Kentwood Real Estate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section class="resources-section" id="resources">
+  <div class="container">
+    <div class="section-label">Resources</div>
+    <h2 class="section-h2">Articles &amp; Guides for Colorado Families</h2>
+    <p class="section-body">Practical, honest guidance on the questions Colorado families are actually asking about housing transitions. New articles added regularly.</p>
+    <div class="resources-grid">
+      <a href="articles/when-does-a-two-story-home-stop-making-sense.html" class="resource-card">
+        <div class="resource-tag">Home Assessment</div>
+        <div class="resource-title">When Does a Two-Story Home Stop Making Sense?</div>
+        <div class="resource-arrow">Read article →</div>
+      </a>
+      <a href="articles/should-aging-parents-stay-or-downsize.html" class="resource-card">
+        <div class="resource-tag">Downsizing</div>
+        <div class="resource-title">Should Aging Parents Stay in Their Home or Downsize?</div>
+        <div class="resource-arrow">Read article →</div>
+      </a>
+      <a href="articles/aging-in-place-vs-downsizing-colorado.html" class="resource-card">
+        <div class="resource-tag">Aging in Place</div>
+        <div class="resource-title">Aging in Place vs. Downsizing in Colorado</div>
+        <div class="resource-arrow">Read article →</div>
+      </a>
+      <a href="articles/should-you-build-an-adu-for-aging-parents.html" class="resource-card">
+        <div class="resource-tag">ADU Strategy</div>
+        <div class="resource-title">Should You Build an ADU for Aging Parents?</div>
+        <div class="resource-arrow">Read article →</div>
+      </a>
+      <a href="articles/multigenerational-living-colorado.html" class="resource-card">
+        <div class="resource-tag">Multigenerational</div>
+        <div class="resource-title">Multigenerational Living in Colorado: What Families Should Consider</div>
+        <div class="resource-arrow">Read article →</div>
+      </a>
+      <a href="articles/renovate-for-aging-in-place-or-move.html" class="resource-card">
+        <div class="resource-tag">Renovation vs. Relocation</div>
+        <div class="resource-title">Should You Renovate for Aging in Place or Move Instead?</div>
+        <div class="resource-arrow">Read article →</div>
+      </a>
+      <a href="articles/ranch-homes-adus-multigenerational-options-colorado.html" class="resource-card">
+        <div class="resource-tag">Transition Planning</div>
+        <div class="resource-title">Ranch Homes, ADUs, and Multigenerational Options in Colorado</div>
+        <div class="resource-arrow">Read article →</div>
+      </a>
+      <a href="articles/how-adult-children-can-help-parents-transition-housing.html" class="resource-card">
+        <div class="resource-tag">Family Transitions</div>
+        <div class="resource-title">How Adult Children Can Help Parents Transition Housing Without Creating Financial Problems</div>
+        <div class="resource-arrow">Read article →</div>
+      </a>
+      <a href="articles/what-repairs-matter-before-downsizing-or-selling.html" class="resource-card">
+        <div class="resource-tag">Selling Strategy</div>
+        <div class="resource-title">What Repairs Actually Matter Before Downsizing or Selling?</div>
+        <div class="resource-arrow">Read article →</div>
+      </a>
+      <a href="articles/how-to-talk-to-aging-parents-about-housing.html" class="resource-card">
+        <div class="resource-tag">Family Conversations</div>
+        <div class="resource-title">How to Talk to Aging Parents About Housing Changes</div>
+        <div class="resource-arrow">Read article →</div>
+      </a>
+      <a href="articles/hidden-costs-of-waiting-to-transition-housing.html" class="resource-card">
+        <div class="resource-tag">Planning</div>
+        <div class="resource-title">The Hidden Costs of Waiting Too Long to Transition Housing</div>
+        <div class="resource-arrow">Read article →</div>
+      </a>
+      <a href="articles/downsizing-checklist-for-colorado-families.html" class="resource-card">
+        <div class="resource-tag">Downsizing</div>
+        <div class="resource-title">Downsizing Checklist for Colorado Families</div>
+        <div class="resource-arrow">Read article →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="consult">
+  <div class="container">
+    <div class="section-label" style="justify-content:center;">Start Here</div>
+    <h2 class="cta-h2">Start the Conversation Before It Becomes Urgent</h2>
+    <p class="cta-body">
+      If your family is beginning to ask whether a current home still works — physically, financially, or logistically — Transitional Property Advisory can help you compare options and create a practical path forward.
+    </p>
+    <a href="mailto:bgustafson@kentwood.com?subject=Transitional Property Advisory Consultation" class="cta-btn">Start a Housing Transition Conversation</a>
+    <div class="cta-contact">
+      <a href="tel:7202349375">720-234-9375</a>
+      <span class="cta-contact-sep">·</span>
+      <a href="mailto:bgustafson@kentwood.com">bgustafson@kentwood.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer-section">
+  <div class="container">
+    <p class="disclaimer-text">
+      <strong>Disclosure:</strong> Transitional Property Advisory is a real estate and property strategy resource. Brendan Gustafson is a licensed Colorado real estate broker associate with Kentwood Real Estate. Information provided is for general educational purposes only and is not legal, tax, financial, medical, or care-management advice. Families should consult appropriate licensed professionals for legal, tax, financial, healthcare, or estate-planning matters. This website is not affiliated with or endorsed by Kentwood Real Estate. Real estate brokerage services are provided through Kentwood Real Estate.
+    </p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Transitional Property Advisory</div>
+        <div class="footer-brand-sub">Colorado Housing Transition Strategy</div>
+        <div style="margin-top:12px;font-size:12px;color:rgba(255,255,255,0.4);line-height:1.8;">
+          <a href="tel:7202349375" style="color:rgba(255,255,255,0.5);text-decoration:none;">720-234-9375</a><br>
+          <a href="mailto:bgustafson@kentwood.com" style="color:rgba(255,255,255,0.5);text-decoration:none;">bgustafson@kentwood.com</a>
+        </div>
+      </div>
+      <div class="footer-brokerage">
+        Real estate brokerage services provided through<br>
+        <strong style="color:rgba(255,255,255,0.55)">Kentwood Real Estate</strong><br>
+        <span style="font-size:11px;">Brendan Gustafson, Broker Associate</span><br>
+        <span style="font-size:11px;color:rgba(255,255,255,0.3);">This site is not affiliated with or endorsed by Kentwood Real Estate.</span>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © 2026 Transitional Property Advisory · Real estate brokerage services through Kentwood Real Estate · All information for general educational purposes only
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
